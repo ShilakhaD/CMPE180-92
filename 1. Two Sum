@@ -1,0 +1,22 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        
+        vector<int> indices;
+int i = 0,j = 0,temp, k = 0;
+    for(i=0;i<nums.size();i++)
+    {
+        for(j=i+1;j<nums.size();j++)
+        {
+            temp = nums[i] + nums[j];
+            if(temp == target)
+            {
+                indices.insert(indices.begin(), i);
+             indices.insert(indices.begin()+1, j);
+               return indices;
+            }
+        }
+    }
+     
+    }
+};
