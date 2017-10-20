@@ -1,0 +1,112 @@
+class Solution {
+public:
+    string intToRoman(int num) {
+        string str = "";
+    if(num<1 || num>3999)
+    {
+        str ="Invalid Roman Numeral";
+    }
+    
+    
+    //using base value 1000, 900, 500, 400, 100, 90, 50, 50, 10, 9, 5, 4,1//
+    if(num>=1000)
+    {
+        int no_of_times_M = num/1000;
+        for(int i =0; i<no_of_times_M;i++)
+        {
+            str = str + "M";
+            num = num-1000;
+        }
+        
+    }
+    if(num>=900 && num<1000)
+    {
+        int no_of_times_CM = num/900;
+        num = num - 900;
+        str = str + "CM";
+    }
+    if(num>=500 && num<900)
+    {
+        int no_of_times_D = num/500;
+        num = num-500;
+        str = str + "D";
+    }
+    if(num >=400 && num<500)
+    {
+        int no_of_times_CD = num/400;
+        num = num-400;
+        str = str + "CD";
+    }
+    if(num<400 && num>=100)
+    {
+        int no_of_times_C = num/100;
+        for(int j = 0; j<no_of_times_C; j++)
+        {
+            str = str + "C";
+            num = num-100;
+        }
+    }
+    if(num<100 && num>=90)
+    {
+        int no_of_times_XC = num/90;
+        num = num-90;
+        str = str + "XC";
+    }
+    if(num<90 && num>=50)
+    {
+        int no_of_times_L = num/50;
+        num = num-50;
+        str = str + "L";
+    }
+    if(num<50 && num>=40)
+    {
+        int no_of_times_XL = num/40;
+        num = num-40;
+        str = str + "XL";
+    }
+    if(num<40 && num>=10)
+    {
+        int no_of_times_X = num/10;
+        
+        for(int k =0; k<no_of_times_X; k++)
+        {
+            str = str + "X";
+            num = num-10;
+        }
+        
+    }
+    
+    
+    if(num<9 && num>=5)
+    {
+        int no_of_times_V = num/5;
+        num = num-5;
+        str = str + "V";
+    }
+    
+    
+    if(num>0 && num<4){
+        int no_of_times_X = num/1;
+        for(int l =0; l<no_of_times_X; l++)
+        {
+            str = str + "I";
+            num = num-1;
+        }
+    }
+    
+    if(num == 4)
+    {
+        str = str + "IV";
+    }
+    
+    if(num == 9)
+    {
+        str = str+"IX";
+    }
+    
+    
+    
+    return str;
+        
+    }
+};
