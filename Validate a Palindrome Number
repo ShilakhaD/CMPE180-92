@@ -1,0 +1,26 @@
+class Solution {
+public:
+    bool isPalindrome(int x){
+        bool isPalindrome = false;
+        int i = 0;
+        string str = to_string(x);
+        int length = str.size();
+        if(str.empty()||length==1)
+            return true;
+        while(str[i] == str[length-i-1] && (i<length-i-1))
+        {
+            i++;
+            isPalindrome =true;
+            if(str[i] != str[length-i-1])
+            {
+              isPalindrome = false;
+                break;
+            }
+        }
+        
+        if(isPalindrome == true)
+            return true ;
+         else return false;
+        
+    }
+};
