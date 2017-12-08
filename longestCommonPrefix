@@ -1,0 +1,52 @@
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs){
+    bool matchFlag= false;
+    string commonPrefix = "";
+    __SIZE_TYPE__ size = strs.size();
+    if(size==0) return "";
+    else if(size==1)return strs[0];
+    else {
+    int loopCount = FindsizeofSmallestString(strs);
+        for(int j=0; j<loopCount; j++)
+        {
+            for(int i=0; i<strs.size()-1; i++)
+            {
+                if(strs[i][j] == strs[i+1][j]){
+                    matchFlag = true;
+                }
+                else if(strs[i][j] != strs[i+1][j])
+                {
+                    matchFlag = false;
+                }
+                if(matchFlag == false) {break;}
+                else continue;
+            }
+            if(matchFlag == true){
+                commonPrefix = commonPrefix + strs[0][j];
+                
+            }
+            else break;
+        }
+        
+        return commonPrefix;
+        
+    
+        
+    }
+        
+    }
+    int FindsizeofSmallestString(vector<string>& stringVector){
+    int size=stringVector.size();
+    int test = stringVector[0].size();
+    for(int i=0; i<size; i++){
+        if(stringVector[i].size()<test){
+            test=stringVector[i].size();
+        }
+        else continue;
+    }
+    return test;
+}
+    
+};
+
