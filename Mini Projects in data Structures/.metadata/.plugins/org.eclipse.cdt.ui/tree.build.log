@@ -1,0 +1,42 @@
+17:52:05 **** Incremental Build of configuration Debug for project tree ****
+make all 
+Building file: ../AvlTree.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"AvlTree.d" -MT"AvlTree.o" -o "AvlTree.o" "../AvlTree.cpp"
+Finished building: ../AvlTree.cpp
+ 
+Building file: ../BSTApp.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BSTApp.d" -MT"BSTApp.o" -o "BSTApp.o" "../BSTApp.cpp"
+Finished building: ../BSTApp.cpp
+ 
+Building file: ../BinaryNode.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinaryNode.d" -MT"BinaryNode.o" -o "BinaryNode.o" "../BinaryNode.cpp"
+Finished building: ../BinaryNode.cpp
+ 
+Building file: ../BinarySearchTree.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinarySearchTree.d" -MT"BinarySearchTree.o" -o "BinarySearchTree.o" "../BinarySearchTree.cpp"
+Finished building: ../BinarySearchTree.cpp
+ 
+Building file: ../BinaryTreeChecker.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinaryTreeChecker.d" -MT"BinaryTreeChecker.o" -o "BinaryTreeChecker.o" "../BinaryTreeChecker.cpp"
+Finished building: ../BinaryTreeChecker.cpp
+ 
+Building file: ../BinaryTreePrinter.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinaryTreePrinter.d" -MT"BinaryTreePrinter.o" -o "BinaryTreePrinter.o" "../BinaryTreePrinter.cpp"
+Finished building: ../BinaryTreePrinter.cpp
+ 
+Building target: tree.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "tree.exe"  ./AvlTree.o ./BSTApp.o ./BinaryNode.o ./BinarySearchTree.o ./BinaryTreeChecker.o ./BinaryTreePrinter.o   
+./BSTApp.o:BSTApp.cpp:(.rdata$.refptr._ZN10BinaryNode13compare_countE[.refptr._ZN10BinaryNode13compare_countE]+0x0): undefined reference to `BinaryNode::compare_count'
+./BSTApp.o:BSTApp.cpp:(.rdata$.refptr._ZN10BinaryNode11probe_countE[.refptr._ZN10BinaryNode11probe_countE]+0x0): undefined reference to `BinaryNode::probe_count'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:46: tree.exe] Error 1
+
+17:52:17 Build Finished (took 12s.411ms)
+

@@ -1,0 +1,19 @@
+18:26:49 **** Incremental Build of configuration Debug for project asgn3_2 ****
+make all 
+Building file: ../prime_spiral.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"prime_spiral.d" -MT"prime_spiral.o" -o "prime_spiral.o" "../prime_spiral.cpp"
+../prime_spiral.cpp: In function 'int make_spiral(int, int, int (*)[101])':
+../prime_spiral.cpp:176:15: warning: variable 'size' set but not used [-Wunused-but-set-variable]
+  int ip,k,num,size,u=1,l=2,r=2,d=2;
+               ^
+Finished building: ../prime_spiral.cpp
+ 
+Building target: asgn3_2.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "asgn3_2.exe"  ./prime_spiral.o   
+Finished building target: asgn3_2.exe
+ 
+
+18:26:50 Build Finished (took 974ms)
+

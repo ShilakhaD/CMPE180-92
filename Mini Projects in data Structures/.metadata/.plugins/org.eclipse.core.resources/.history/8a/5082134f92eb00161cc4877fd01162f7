@@ -1,0 +1,102 @@
+/*
+ * rps.cpp
+ *
+ *  Created on: Feb 4, 2017
+ *      Author: Kathan Patel
+ */
+
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+const int MAX_ROUNDS = 20;  // max rounds per game
+
+/*
+enum Player { HUMAN, COMPUTER, TIE };   // players and winners
+enum Thing  { ROCK, PAPER, SCISSORS };  // what each player chooses
+*/
+
+
+int name(string& username_f);					/*this function takes the USER NAME*/
+int choice(char& user_choice_f);				/*this function takes the user CHOICE*/
+int random_number(int& count_f,int& value_f);	/*this function generates the RANDOM number*/
+
+
+
+
+int main()
+{
+// 	  int human_wins = 0;
+//    int computer_wins = 0;
+//    int ties = 0;
+
+	string username;
+
+	int count;
+	count=1;
+	int value;
+    srand(time(NULL));  					/* seed the random number generator */
+
+    char user_choice;
+
+
+    name(username);							/* calling the function to get NAME */
+    cout<<username<<"\n";
+
+    value=random_number(count,value);		/* calling this function to get RANDOM number */
+
+    choice(user_choice);
+    cout<<
+
+	return 0;
+}
+
+
+/*function to get the USERNAME*/
+int name(string& username_f)
+{
+	cin>>username_f;
+	return 0;
+}
+
+
+/*function to get RANDOM NUMBERS*/
+int random_number(int& count_f, int& value_f)
+{
+	while(count_f<=MAX_ROUNDS)
+	{
+    value_f=(rand()%3);
+    if(value_f==0)
+    	cout<<"The computer chose ROCK."<<"\n";
+    if(value_f==1)
+    	cout<<"The computer chose PAPER."<<"\n";
+    if(value_f==2)
+    	cout<<"The computer chose SCISSORS."<<"\n";
+    count_f++;
+	}
+	return value_f;
+}
+
+
+int choice(char& user_choice_f)
+{
+	cout<<"Your choice? ";
+	cin>>user_choice_f;
+	cout<<"\n";
+	if(user_choice_f=='r' || user_choice_f=='R')
+		cout<<"You chose ROCK."<<"\n";
+	if(user_choice_f=='p' || user_choice_f=='P' )
+		cout<<"You chose PAPER."<<"\n";
+	if(user_choice_f=='s' || user_choice_f=='S' )
+		cout<<"You chose SCISSORS."<<"\n";
+	else
+		cout<<"*** ERROR: Valid choices are R, P, or S"<<"\n";
+	return 0;
+}
+
+/*
+void record_win( ***** Complete this function. ***** )
+{
+}
+*/

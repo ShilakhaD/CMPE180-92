@@ -1,0 +1,8 @@
+14:58:20 **** Incremental Build of configuration Debug for project hello ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+Info: Internal Builder is used for build
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\hello.o" "..\\src\\hello.cpp" 
+g++ -o hello.exe "src\\hello.o" 
+
+14:58:21 Build Finished (took 1s.31ms)
+

@@ -1,0 +1,15 @@
+00:13:53 **** Incremental Build of configuration Debug for project myLisa ****
+make all 
+Building file: ../myLisa.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"myLisa.d" -MT"myLisa.o" -o "myLisa.o" "../myLisa.cpp"
+Finished building: ../myLisa.cpp
+ 
+Building target: myLisa.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "myLisa.exe"  ./myLisa.o   
+Finished building target: myLisa.exe
+ 
+
+00:13:57 Build Finished (took 4s.181ms)
+

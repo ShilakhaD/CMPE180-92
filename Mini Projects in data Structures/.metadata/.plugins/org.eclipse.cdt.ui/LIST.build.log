@@ -1,0 +1,21 @@
+11:53:15 **** Incremental Build of configuration Debug for project LIST ****
+make all 
+Building file: ../list.cpp
+Invoking: Cygwin C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"list.d" -MT"list.o" -o "list.o" "../list.cpp"
+../list.cpp:22:2: error: 'temp' does not name a type
+  temp->data= 1;
+  ^
+../list.cpp:23:2: error: 'temp' does not name a type
+  temp->prev = NULL;
+  ^
+../list.cpp:24:2: error: 'head' does not name a type
+  head = temp;
+  ^
+../list.cpp:25:2: error: 'tail' does not name a type
+  tail = temp;
+  ^
+make: *** [subdir.mk:23: list.o] Error 1
+
+11:53:17 Build Finished (took 1s.920ms)
+

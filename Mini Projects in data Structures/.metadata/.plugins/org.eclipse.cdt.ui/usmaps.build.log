@@ -1,0 +1,6 @@
+12:58:30 **** Incremental Build of configuration Debug for project usmaps ****
+make all 
+make: Nothing to be done for 'all'.
+
+12:58:30 Build Finished (took 325ms)
+

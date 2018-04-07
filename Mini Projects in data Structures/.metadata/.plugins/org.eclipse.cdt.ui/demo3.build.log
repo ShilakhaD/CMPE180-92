@@ -1,0 +1,15 @@
+23:44:19 **** Incremental Build of configuration Debug for project demo3 ****
+make all 
+Building file: ../pract3.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pract3.d" -MT"pract3.o" -o "pract3.o" "../pract3.cpp"
+Finished building: ../pract3.cpp
+ 
+Building target: demo3.exe
+Invoking: Cygwin C++ Linker
+g++  -o "demo3.exe"  ./pract3.o   
+Finished building target: demo3.exe
+ 
+
+23:44:22 Build Finished (took 3s.221ms)
+

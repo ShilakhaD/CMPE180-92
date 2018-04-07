@@ -1,0 +1,61 @@
+/*
+ * rps.cpp
+ *
+ *  Created on: Feb 4, 2017
+ *      Author: Kathan Patel
+ */
+
+#include <iostream>
+#include <ctime>
+#include <cstdlib>
+using namespace std;
+
+const int MAX_ROUNDS = 20;  // max rounds per game
+
+/*
+
+enum Player { HUMAN, COMPUTER, TIE };   // players and winners
+enum Thing  { ROCK, PAPER, SCISSORS };  // what each player chooses
+
+void record_win( //***** Complete this declaration. ***** );
+
+*/
+
+/***** Add more function declarations. *****/
+
+/**
+ * The main. Play a game consisting of MAX_ROUNDS.
+ * Print the number of human player wins, computer wins, and ties.
+ */
+
+
+int main()
+{
+
+//	int human_wins = 0;
+//    int computer_wins = 0;
+//    int ties = 0;
+	int count;
+	count=1;
+while(count<=MAX_ROUNDS)
+{
+    srand(time(NULL));  // seed the random number generator
+    int value;
+    value=(rand()%3);
+    cout<<value<<"<<<<"<<"\n";
+    rand()+1;
+    cout<<"kp";
+    count++;
+    /***** Complete this main. *****/
+}
+    return 0;
+}
+
+
+/*
+void record_win( //***** Complete this function. ***** )
+{
+
+}
+*/
+/***** Define more functions. *****/

@@ -1,0 +1,7 @@
+10:38:38 **** Clean-only build of configuration Debug for project calculator ****
+make clean 
+rm -rf  ./Calculator.o ./main.o  ./Calculator.d ./main.d  calculator.exe
+ 
+
+10:38:39 Build Finished (took 854ms)
+

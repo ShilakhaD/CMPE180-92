@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;asgn3_2/spiral.cpp&apos; to &apos;prime_spiral.cpp&apos;" description="Rename resource &apos;spiral.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="spiral.cpp" name="prime_spiral.cpp" stamp="1487292885263" updateReferences="true"/>
+</session>

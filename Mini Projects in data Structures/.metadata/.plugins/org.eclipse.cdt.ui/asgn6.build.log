@@ -1,0 +1,31 @@
+17:19:56 **** Build of configuration Debug for project asgn6 ****
+make all 
+Building file: ../asgn6.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"asgn6.d" -MT"asgn6.o" -o "asgn6.o" "../asgn6.cpp"
+../asgn6.cpp: In function 'int search(std::string)':
+../asgn6.cpp:170:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for ( int i = 0; i < list.size(); i++)
+                     ^
+../asgn6.cpp: In function 'int sort(employee&)':
+../asgn6.cpp:182:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for ( int i = 0; i < list.size(); i++)
+                     ^
+../asgn6.cpp: In function 'void print_all(std::vector<employee>&)':
+../asgn6.cpp:197:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+  for (int i =0; i < list.size(); i++)
+                   ^
+../asgn6.cpp: In function 'void print_stats(std::vector<employee>&)':
+../asgn6.cpp:211:12: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   while (i < list.size())
+            ^
+Finished building: ../asgn6.cpp
+ 
+Building target: asgn6.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "asgn6.exe"  ./asgn6.o   
+Finished building target: asgn6.exe
+ 
+
+17:19:58 Build Finished (took 2s.703ms)
+

@@ -1,0 +1,15 @@
+17:20:05 **** Build of configuration Debug for project demo2 ****
+make all 
+Building file: ../pract2.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"pract2.d" -MT"pract2.o" -o "pract2.o" "../pract2.cpp"
+Finished building: ../pract2.cpp
+ 
+Building target: demo2.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "demo2.exe"  ./pract2.o   
+Finished building target: demo2.exe
+ 
+
+17:20:08 Build Finished (took 2s.816ms)
+

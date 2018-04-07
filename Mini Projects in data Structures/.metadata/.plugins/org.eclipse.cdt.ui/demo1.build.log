@@ -1,0 +1,22 @@
+17:20:02 **** Build of configuration Debug for project demo1 ****
+make all 
+Building file: ../bst.cpp
+Invoking: Cygwin C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"bst.d" -MT"bst.o" -o "bst.o" "../bst.cpp"
+../bst.cpp: In function 'int find(int)':
+../bst.cpp:18:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../bst.cpp
+ 
+Building target: demo1.exe
+Invoking: Cygwin C++ Linker
+g++ -L"C:\cygwin64\bin" -o "demo1.exe"  ./bst.o   
+/usr/lib/gcc/x86_64-pc-cygwin/5.4.0/../../../../lib/libcygwin.a(libcmain.o): In function `main':
+/usr/src/debug/cygwin-2.7.0-1/winsup/cygwin/lib/libcmain.c:37: undefined reference to `WinMain'
+/usr/src/debug/cygwin-2.7.0-1/winsup/cygwin/lib/libcmain.c:37:(.text.startup+0x7f): relocation truncated to fit: R_X86_64_PC32 against undefined symbol `WinMain'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:49: demo1.exe] Error 1
+
+17:20:04 Build Finished (took 2s.658ms)
+
